@@ -5,7 +5,7 @@
 HTML
 ----
 
-[HTML Introduction] [https://www.w3schools.com/html/html_intro.asp]
+[HTML Introduction](https://www.w3schools.com/html/html_intro.asp)
 
 [HTML Basic] [https://www.w3schools.com/html/html_basic.asp]
 
