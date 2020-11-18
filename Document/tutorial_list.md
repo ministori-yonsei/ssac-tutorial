@@ -22,3 +22,9 @@ HTML
 [HTML Comments](https://www.w3schools.com/html/html_comments.asp)
 
 [HTML Links](https://www.w3schools.com/html/html_links.asp)
+
+[HTML Images](https://www.w3schools.com/html/html_images.asp)
+
+[HTML Tables](https://www.w3schools.com/html/html_tables.asp)
+
+[HTML Lists](https://www.w3schools.com/html/html_lists.asp)
