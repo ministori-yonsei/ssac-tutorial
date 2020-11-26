@@ -21,7 +21,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    box-sizing:border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -29,7 +30,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    font-family: 'Lato', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -53,9 +55,35 @@ table {
     background:#000;
 }
 
+.container{
+    width:1340px;
+    margin:0 auto; /* 가운데 배치 */
+}
+
+.flex-container{
+    display:flex;
+    justify-content: space-between;
+}
+
 .logo{
     width:178px;
     height:24px;
     text-indent:-99999em;
     background:url(../images/logo.png) no-repeat;
+}
+
+.gnb{
+    display:flex;
+}
+
+.gnb-list{
+    display:flex;
+    width:500px;
+    justify-content: space-between;
+}
+
+.gnb-list-link{
+    font-size:18px;
+    color:#fff;
+    text-decoration:none;
 }
