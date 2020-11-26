@@ -87,3 +87,65 @@ table {
     color:#fff;
     text-decoration:none;
 }
+
+.gnb-util-link{
+    display:block;
+    padding:13px 20px;
+    border:1px solid #fff;
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+    margin-left:20px;
+    border-radius:50px;
+}
+.contents1{
+    width:100%;
+    height:1080px;
+    background:url(../images/bg.png) no-repeat center top;
+    background-size:cover;
+}
+
+.heading-type1{
+    font-size:48px;
+    font-weight:700;
+    color:#fff;
+}
+
+.paragraph{
+    font-size:18px;
+    color:#5e6372;
+    line-height:2;
+}
+
+.paragraph.type-white{
+    color:#fff;
+}
+
+.opacity50{
+    opacity:0.5;
+}
+
+.contents1-theme{
+    text-align:center;
+}
+
+.link-button{
+    display:inline-block;
+    width:200px;
+    height:50px;
+    border-radius:50px;
+    font-size:18px;
+    text-align:center;
+    line-height:46px;/* 텍스트 세로방향 가운데 배치 */
+    text-decoration:none;
+}
+
+.link-button.type-white{
+    background:#fff;
+    color:#d32721;
+}
+
+.link-button.type-alpha{
+    border:1px solid #fff;
+    color:#fff;
+}
