@@ -164,6 +164,11 @@ table {
     color:#fff;
 }
 
+.link-button.type-blue{
+    background:#264699;
+    color:#fff;
+}
+
 .mt10{
     margin-top:10px;
 }
@@ -232,4 +237,90 @@ table {
 
 .icon-list-description{
     line-height:30px;
+}
+
+.contents2{
+    height:600px;
+    background:#f6f6f6;
+}
+
+.contents2-link{
+    text-align:center;
+}
+
+.gradient-text>span{ /* > : 직계 자손(자식) 요소 */
+    background: rgb(203,0,52);
+    background: linear-gradient(75deg, rgba(203,0,52,1) 0%, rgba(224,105,0,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading-type2{
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.width800{
+    width:800px;
+}
+
+.width960{
+    width:960px;
+}
+
+.circle-list{
+    margin-top:50px;
+}
+
+.circle-list-item{
+    width:480px;
+    height:70px;
+    position:relative;
+    padding-left:75px;
+    font-size:14px;
+    line-height:24px;
+    color:#a7acbc;
+    float:left;
+    padding-right: 30px;
+    margin-bottom: 50px;
+}
+
+.circle-list-item-number{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    border:1px solid #c6cde0;
+    border-radius:50px;
+    font-size:24px;
+    text-align:center;
+    line-height:50px; /* 세로방향 가운데 정렬 */
+    color:#3f4e76;
+    position:absolute;
+    left:0px;
+}
+
+.contents3{
+    height:670px;
+    padding-top:120px;
+    background:url(../images/bg_drone.png) no-repeat right center;
+}
+
+.content4{
+    height:640px;
+    background:#f6f6f6;
+}
+
+.contents4-image{
+    width:50%;
+    height:640px;
+    float:left;
+    background:url(../images/foto_top.png) no-repeat 0 0;
+    background-size:cover;
+}
+
+.contents4-text{
+    width:50%;
+    height:640px;
+    float:left;
 }
