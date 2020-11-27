@@ -56,6 +56,7 @@ table {
     left:0;
     top:50px;
     width:100%;/* position:absolute 적용시 width는 자식요소에 맞춰짐 */
+    z-index:900;
 }
 
 .container{
@@ -464,16 +465,37 @@ table {
         display:block;
     }
 
+    .logo{
+        margin-bottom:30px;
+    }
+
     .gnb{
-        /* display:block; */
-        display:none;
+        display:block;
+        height:280px;
+        /* height:0; */
         margin-right:0;
-        border-top:1px solid #fff;
-        border-bottom:1px solid #fff;
-        padding:20px 0;
         text-align:right;
-        margin-top:30px;
-        background:rgba(0,0,0,0.8);
+        background:rgba(0,0,0,1);
+        overflow:hidden;
+        position:relative;
+    }
+
+    .gnb:before, .gnb:after{
+        content:"";
+        display:block;
+        width:100%;
+        height:1px;
+        background:#fff;
+    }
+
+    .gnb:before{
+        margin-bottom:20px;
+    }
+
+    .gnb:after{
+        position:absolute;
+        left:0;
+        bottom:0;
     }
 
     .gnb-list{
@@ -578,6 +600,22 @@ table {
         width:100%;
     }
 
+    .email-form{
+        width:auto;
+    }
 
+    .email-input{
+        width:148px;
+        padding:0 135px 0 30px;
+    }
+
+    .footer{
+        height:200px;
+        padding:30px 20px;
+    }
+
+    .scroll-down{
+        margin:40px auto 0;
+    }
 
 }
