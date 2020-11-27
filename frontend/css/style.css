@@ -52,7 +52,10 @@ table {
 /* page css */
 
 .header{
-    background:#000;
+    position:absolute;
+    left:0;
+    top:50px;
+    width:100%;/* position:absolute 적용시 width는 자식요소에 맞춰짐 */
 }
 
 .container{
@@ -63,6 +66,7 @@ table {
 .flex-container{
     display:flex;
     justify-content: space-between;
+    align-items:center;
 }
 
 .logo{
@@ -80,6 +84,7 @@ table {
     display:flex;
     width:500px;
     justify-content: space-between;
+    align-items:center;
 }
 
 .gnb-list-link{
@@ -103,6 +108,7 @@ table {
     height:1080px;
     background:url(../images/bg.png) no-repeat center top;
     background-size:cover;
+    padding-top:300px;
 }
 
 .heading-type1{
@@ -129,7 +135,14 @@ table {
     text-align:center;
 }
 
+.contents1-theme-link{
+    margin-top:55px;
+}
+
 .link-button{
+    /*
+        inline, inline-block 요소는 text-align이 적용됨(텍스트 요소와 같게 작동)
+    */
     display:inline-block;
     width:200px;
     height:50px;
@@ -148,4 +161,37 @@ table {
 .link-button.type-alpha{
     border:1px solid #fff;
     color:#fff;
+}
+
+.mt10{
+    margin-top:10px;
+}
+.mr20{
+    margin-right:20px;
+}
+
+.scroll-down{
+    width:25px;
+    height:80px;
+    text-indent:-99999em;
+    background:url(../images/scroll_down.gif) no-repeat;
+    background-size:25px auto;
+    margin: 380px auto 0;
+}
+
+.icon-list{
+    width:25%;
+    float:left;
+}
+
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.icon-list-title{
+    font-size:30px;
+    line-height:36px;
+    font-weight:700;
 }
