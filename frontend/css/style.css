@@ -125,6 +125,7 @@ table {
 
 .paragraph.type-white{
     color:#fff;
+    line-height:30px;
 }
 
 .opacity50{
@@ -182,6 +183,37 @@ table {
 .icon-list{
     width:25%;
     float:left;
+    text-align:center;
+    padding: 115px 65px 100px;
+}
+
+.icon-list:nth-child(1):before{
+    content:"";
+    display:inline-block;
+    width:103px;
+    height:100px;
+    background:url(../images/drone.png) no-repeat center bottom;
+}
+.icon-list:nth-child(2):before{
+    content:"";
+    display:inline-block;
+    width:97px;
+    height:100px;
+    background:url(../images/drone-1.png) no-repeat center bottom;
+}
+.icon-list:nth-child(3):before{
+    content:"";
+    display:inline-block;
+    width:84px;
+    height:100px;
+    background:url(../images/propeller.png) no-repeat center bottom;
+}
+.icon-list:nth-child(4):before{
+    content:"";
+    display:inline-block;
+    width:71px;
+    height:100px;
+    background:url(../images/control.png) no-repeat center bottom;
 }
 
 .clearfix:after{
@@ -194,4 +226,10 @@ table {
     font-size:30px;
     line-height:36px;
     font-weight:700;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.icon-list-description{
+    line-height:30px;
 }
