@@ -4,6 +4,8 @@ $(function(){
 
         // $('.gnb').slideToggle();
 
+        $('.gnb').toggleClass('active');
+
     });
 
 });

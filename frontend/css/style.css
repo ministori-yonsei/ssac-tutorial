@@ -104,6 +104,11 @@ table {
     margin-left:20px;
     border-radius:50px;
 }
+
+.mobile-btn{
+    display:none;
+}
+
 .contents1{
     width:100%;
     height:1080px;
@@ -319,8 +324,20 @@ table {
     width:50%;
     height:640px;
     float:left;
-    background:url(../images/foto_top.png) no-repeat center 0;
-    background-size:cover;
+    /* background:url(../images/foto_top.png) no-repeat center 0; */
+    /* background-size:cover; */
+    overflow:hidden;
+    position:relative;
+}
+
+.contents4-image .video{ /* selector selector : 공백 : 자손 */
+    /* width:100%; */
+    height:100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    /* transform:translate() : 현재 위치를 기준으로 이동, % 단위를 사용할 경우 자신의 크기를 기준으로 계산 */
 }
 
 .contents4-text{
@@ -412,6 +429,13 @@ table {
     line-height:2;
 }
 
+@media screen and (min-width:1921px){
+    .contents4-image .video{
+        width:100%;
+        height:auto;
+    }
+}
+
 @media screen and (max-width:1340px){
 
     .container{
@@ -471,13 +495,18 @@ table {
 
     .gnb{
         display:block;
-        height:280px;
-        /* height:0; */
+        /* height:280px; */
+        height:0;
         margin-right:0;
         text-align:right;
         background:rgba(0,0,0,1);
         overflow:hidden;
         position:relative;
+        transition:height 0.5s ease-out; /* 특정 속성을 애니메이션으로 구현 가능 */
+    }
+
+    .gnb.active{
+        height:280px;
     }
 
     .gnb:before, .gnb:after{
@@ -523,6 +552,7 @@ table {
     }
 
     .mobile-btn{
+        display:block;
         border:none;
         background:none;
         position:absolute;
